@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Samir Williams</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: lightgrey;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: space-around;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: center;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Samir Williams</h1>
+  <p>Creative Visualist</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Works</a>
+  <a href="#">Resume</a>
+  <a href="#">Contact</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Samir is a young self-driven creative visualits galvanized to generate and supply prime quality visuals, establishing relationships among entities and business professionals in vast industries. His vision is to grow and expand his creativity using his gifted abilities. Holding a strong work wthic that derives from experiences in leadership bring ideal attributes through his works and services. </p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+
+
+  <div class="main">
+    <h2>Adlite Solutions</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <br>
+
+    <h2>EcoGem Dimaonds</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>EcoGem is all about progression and resolution when it comes to abetting the world and our customers with diamonds. We provide a cost effective solution of purchasing CVD Diamonds and diamond material products through this diamond market crises. EcoGem is based out of the Greater Boston Area and holds a facility with highly advanced technology that helps us create or specialized products.</p>
+    
+    <br>
+
+    <h2>Conde Nast</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Condé Nast is a premier media company renowned for producing the highest quality content for the world's most influential audiences.Attracting more than 144 million consumers across its industry-leading print, digital and video brands, the company’s portfolio includes some of the most iconic titles in media: Vogue, Vanity Fair, Glamour, Brides, Self, GQ, GQ Style, The New Yorker, Condé Nast Traveler, Allure, AD, Bon Appétit, Epicurious, Wired, W, Golf Digest, Teen Vogue, Ars Technica, Pitchfork, them and Iris. The company’s newest division, Condé Nast Entertainment, was launched in 2011 to develop film, television and premium digital video programming.</p>
+
+    <br>
+
+    <h2>The Vault</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>"100 prints at The vault" Come Join us at the vault. Where we join with the world of up and coming entrepreneurs, fashion designers, and Graphic designer to become apart of our intriguing Creative process. We provide T shirt printing, Signs, Graphic Design, Art, Business cards, and consultations.</p>
+    <br>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
