@@ -1,0 +1,58 @@
+* {box-sizing: border-box;}
+
+.wrapper {
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-image: url("https://i.postimg.cc/gk2KdHcP/henry-co-1388031-unsplash.jpg");
+    margin: 0 auto;
+}
+
+.wrapper > div {
+    border: 2px solid grey;
+    border-radius: 1px;
+    background-color;
+    padding: 9em;
+}
+
+.header {
+    grid-area: h;
+}
+.footer {
+    grid-area: f;
+}
+.main {
+    grid-area: m;
+}
+.sidebar {
+    grid-area: s;
+}
+.wrapper {
+    display: grid;
+    grid-auto-rows: 60 auto 20%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "h"
+      "m"
+      "s"
+      "f";
+}
+/* @media (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "s s s m m m m m m"
+          "f f f f f f f f f";
+    }
+} */
+@media (min-width: 750px) {
+   
+
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+          "h h h h h h h h h"
+          "s s s m m m m m m"
+          "f f f f f f f f f";
+    }
+}
